@@ -12,15 +12,41 @@
 </head>
 <body>
 
-  We are launching soon!
+  <header>
+    <img src="./images/logo.svg" alt="Ping logo">
+  </header>
 
-  Subscribe and get notified
+  <main>
 
-  Notify Me
+    <h1>We are launching soon!</h1>
+    <p>Subscribe and get notified</p>
+    <form novalidate>
+      <div class="form-input">
+        <input type="email" name="email" id="email" placeholder="Your email address..."/>
+        <p class="error"></p>
+      </div>
+      <button type="submit">Notify Me</button>
+    </form>
 
-  &copy; Copyright Ping. All rights reserved.
+    <img src="./images/illustration-dashboard.png" alt="Web page illustration with charts">
+
+  </main>
 
   <footer>
+    <div class="social-links">
+      <!-- TODO: Search how to convert the icons to be accessible -->
+      <div class="icon">
+        <i class="facebook-f"></i>
+      </div>
+      <div class="icon">
+        <i class="twitter"></i>
+      </div>
+      <div class="icon">
+        <i class="instagram"></i>
+      </div> 
+    </div>
+
+    <p class="copyright">&copy; Copyright Ping. All rights reserved.</p>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Juan Bonilla</a>.
