@@ -1,3 +1,35 @@
+@import './sass/icons/fontawesome.scss';
+@import './sass/icons/solid.scss';
+@import './sass/icons/brands.scss';
+@import './sass/icons/regular.scss';
+
+.facebook-f {
+    @extend %fa-icon;
+    @extend .fab;
+  
+    &:before {
+      content: fa-content($fa-var-facebook-f);
+    }
+}
+
+.twitter {
+    @extend %fa-icon;
+    @extend .fab;
+  
+    &:before {
+      content: fa-content($fa-var-twitter);
+    }
+}
+
+.instagram {
+    @extend %fa-icon;
+    @extend .fab;
+  
+    &:before {
+      content: fa-content($fa-var-instagram);
+    }
+}
+
 .attribution { 
     font-size: 11px; 
     text-align: center; 
