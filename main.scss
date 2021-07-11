@@ -1,40 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+@import './sass/helpers/variables';
 @import './sass/icons/fontawesome.scss';
 @import './sass/icons/solid.scss';
 @import './sass/icons/brands.scss';
 @import './sass/icons/regular.scss';
 
-.facebook-f {
-    @extend %fa-icon;
-    @extend .fab;
-  
-    &:before {
-      content: fa-content($fa-var-facebook-f);
-    }
+* {
+  box-sizing: border-box;
 }
 
-.twitter {
-    @extend %fa-icon;
-    @extend .fab;
-  
-    &:before {
-      content: fa-content($fa-var-twitter);
-    }
+html {
+  font-family: 'Libre Franklin', Tahoma, sans-serif;
 }
 
-.instagram {
-    @extend %fa-icon;
-    @extend .fab;
-  
-    &:before {
-      content: fa-content($fa-var-instagram);
-    }
+body {
+  padding: 0;
+  margin: 0;
 }
 
-.attribution { 
-    font-size: 11px; 
-    text-align: center; 
+header, main, footer {
+  width: 85%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+header {
+  margin-top: 5rem;
+  
+  img {
+    width: 3.3rem;
+  }
+}
+
+main {
+  h1 {
+    margin-top: 2.5rem;
+    color: $gray;
+    font-size: 1.4rem;
+    font-weight: 300;
+
+    strong {
+      color: $very-dark-blue;
+      font-weight: 700;
+    }
+  }
+
+  p {
+    color: $very-dark-blue;
+    font-size: 0.75rem;
+    margin-top: 1rem;
+  }
+
+  form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem auto 4rem;
+
+    input, button {
+      display: block;
+      width: 100%;
+      height: 2.5rem;
+      border-radius: 4rem;
+    }
+
+    .form-input {
+      width: 100%;
+
+      input {
+        padding: 0 2rem;
+        border: 1px solid $pale-blue;
+        color: $pale-blue;
+
+        &:focus {
+          color: $very-dark-blue;
+        }
+      }
+
+      .error {
+        margin: 0;
+      }
+    }
+
+    button {
+      margin-top: 0.625rem;
+      background-color: $blue;
+      border: 1px solid $blue;
+      box-shadow: 1px 5px 14px $pale-blue;
+      color: $white;
+      font-family: inherit;
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+footer {
+  margin-top: 6rem;
+
+  .social-links {
+    width: 9rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .icon {
+      border: 1px solid $pale-blue;
+      border-radius: 50%;
+      width: 1.9375rem;
+      height: 1.9375rem;
+
+      a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        font-size: 0.875rem;
+        text-decoration: none;
+
+        &:link, &:visited {
+          color: $blue;
+        }
+      }
+    }
     
-    a { 
-        color: hsl(228, 45%, 44%); 
+    // Icons
+    .facebook-f {
+        @extend %fa-icon;
+        @extend .fab;
+      
+        &:before {
+          content: fa-content($fa-var-facebook-f);
+        }
     }
+    
+    .twitter {
+        @extend %fa-icon;
+        @extend .fab;
+      
+        &:before {
+          content: fa-content($fa-var-twitter);
+        }
+    }
+    
+    .instagram {
+        font-size: 1rem;
+        @extend %fa-icon;
+        @extend .fab;
+      
+        &:before {
+          content: fa-content($fa-var-instagram);
+        }
+    }
+  }
+
+  .copyright {
+    margin-top: 1.5rem;
+    color: $gray;
+    font-size: 0.625rem;
+  }
+  
+  .attribution { 
+      font-size: 11px; 
+      text-align: center; 
+      color: $gray;
+      
+      a { 
+          color: hsl(228, 45%, 44%); 
+      }
+  }
 }

@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
 /*!
  * Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -9,9 +10,9 @@
 .fal,
 .fad,
 .fab,
-.instagram,
-.twitter,
-.facebook-f {
+footer .social-links .instagram,
+footer .social-links .twitter,
+footer .social-links .facebook-f {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   display: inline-block;
@@ -21,7 +22,7 @@
   line-height: 1;
 }
 
-.instagram, .twitter, .facebook-f {
+footer .social-links .instagram, footer .social-links .twitter, footer .social-links .facebook-f {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: inline-block;
@@ -126,9 +127,9 @@
 .far.fa-pull-left,
 .fal.fa-pull-left,
 .fab.fa-pull-left,
-.fa-pull-left.instagram,
-.fa-pull-left.twitter,
-.fa-pull-left.facebook-f {
+footer .social-links .fa-pull-left.instagram,
+footer .social-links .fa-pull-left.twitter,
+footer .social-links .fa-pull-left.facebook-f {
   margin-right: 0.3em;
 }
 .fa.fa-pull-right,
@@ -136,9 +137,9 @@
 .far.fa-pull-right,
 .fal.fa-pull-right,
 .fab.fa-pull-right,
-.fa-pull-right.instagram,
-.fa-pull-right.twitter,
-.fa-pull-right.facebook-f {
+footer .social-links .fa-pull-right.instagram,
+footer .social-links .fa-pull-right.twitter,
+footer .social-links .fa-pull-right.facebook-f {
   margin-left: 0.3em;
 }
 
@@ -6114,7 +6115,7 @@ readers do not read off random characters that represent icons */
   src: url("./webfonts/fa-brands-400.eot");
   src: url("./webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("./webfonts/fa-brands-400.woff2") format("woff2"), url("./webfonts/fa-brands-400.woff") format("woff"), url("./webfonts/fa-brands-400.ttf") format("truetype"), url("./webfonts/fa-brands-400.svg#fontawesome") format("svg");
 }
-.fab, .instagram, .twitter, .facebook-f {
+.fab, footer .social-links .instagram, footer .social-links .twitter, footer .social-links .facebook-f {
   font-family: "Font Awesome 5 Brands";
   font-weight: 400;
 }
@@ -6136,23 +6137,141 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
 }
 
-.facebook-f:before {
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Libre Franklin", Tahoma, sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+header, main, footer {
+  width: 85%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+header {
+  margin-top: 5rem;
+}
+header img {
+  width: 3.3rem;
+}
+
+main h1 {
+  margin-top: 2.5rem;
+  color: #969696;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+main h1 strong {
+  color: #151f29;
+  font-weight: 700;
+}
+main p {
+  color: #151f29;
+  font-size: 0.75rem;
+  margin-top: 1rem;
+}
+main form {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem auto 4rem;
+}
+main form input, main form button {
+  display: block;
+  width: 100%;
+  height: 2.5rem;
+  border-radius: 4rem;
+}
+main form .form-input {
+  width: 100%;
+}
+main form .form-input input {
+  padding: 0 2rem;
+  border: 1px solid #c2d3ff;
+  color: #c2d3ff;
+}
+main form .form-input input:focus {
+  color: #151f29;
+}
+main form .form-input .error {
+  margin: 0;
+}
+main form button {
+  margin-top: 0.625rem;
+  background-color: #4f7df3;
+  border: 1px solid #4f7df3;
+  box-shadow: 1px 5px 14px #c2d3ff;
+  color: white;
+  font-family: inherit;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+main img {
+  width: 100%;
+}
+
+footer {
+  margin-top: 6rem;
+}
+footer .social-links {
+  width: 9rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+footer .social-links .icon {
+  border: 1px solid #c2d3ff;
+  border-radius: 50%;
+  width: 1.9375rem;
+  height: 1.9375rem;
+}
+footer .social-links .icon a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 0.875rem;
+  text-decoration: none;
+}
+footer .social-links .icon a:link, footer .social-links .icon a:visited {
+  color: #4f7df3;
+}
+footer .social-links .facebook-f:before {
   content: "";
 }
-
-.twitter:before {
+footer .social-links .twitter:before {
   content: "";
 }
-
-.instagram:before {
+footer .social-links .instagram {
+  font-size: 1rem;
+}
+footer .social-links .instagram:before {
   content: "";
 }
-
-.attribution {
+footer .copyright {
+  margin-top: 1.5rem;
+  color: #969696;
+  font-size: 0.625rem;
+}
+footer .attribution {
   font-size: 11px;
   text-align: center;
+  color: #969696;
 }
-.attribution a {
+footer .attribution a {
   color: #3e52a3;
 }
 
