@@ -79,8 +79,20 @@ main {
         }
       }
 
-      .error {
+      input.error--active {
+        color: $very-dark-blue;
+        border: 2px solid $light-red;
+        outline: $light-red;
+      }
+
+      p.error {
         margin: 0;
+
+        &--active {
+          margin: 0.5rem 0 1rem;
+          color: $light-red;
+          font-style: italic;
+        }
       }
     }
 
@@ -93,6 +105,7 @@ main {
       font-family: inherit;
       font-size: 0.75rem;
       font-weight: 600;
+      cursor: pointer;
     }
   }
 

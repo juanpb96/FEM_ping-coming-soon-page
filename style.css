@@ -6203,8 +6203,18 @@ main form .form-input input {
 main form .form-input input:focus {
   color: #151f29;
 }
-main form .form-input .error {
+main form .form-input input.error--active {
+  color: #151f29;
+  border: 2px solid #ff5263;
+  outline: #ff5263;
+}
+main form .form-input p.error {
   margin: 0;
+}
+main form .form-input p.error--active {
+  margin: 0.5rem 0 1rem;
+  color: #ff5263;
+  font-style: italic;
 }
 main form button {
   margin-top: 0.625rem;
@@ -6215,6 +6225,7 @@ main form button {
   font-family: inherit;
   font-size: 0.75rem;
   font-weight: 600;
+  cursor: pointer;
 }
 main img {
   width: 100%;
