@@ -35,15 +35,25 @@
 
   <footer>
     <div class="social-links">
-      <!-- TODO: Search how to convert the icons to be accessible -->
+      <!-- Aria-hidden will hide icons from screen readers -->
+      <!-- The span tag will help screen readers to know what the icon refers to -->
       <div class="icon">
-        <a href="#"><i class="facebook-f"></i></a>
+        <a href="#">
+          <i class="facebook-f" aria-hidden="true"></i>
+          <span class="sr-only">Facebook</span>
+        </a>
       </div>
       <div class="icon">
-        <a href="#"><i class="twitter"></i></a>
+        <a href="#">
+          <i class="twitter" aria-hidden="true"></i>
+          <span class="sr-only">Twitter</span>
+        </a>
       </div>
       <div class="icon">
-        <a href="#"><i class="instagram"></i></a>
+        <a href="#">
+          <i class="instagram" aria-hidden="true"></i>
+          <span class="sr-only">Instagram</span>
+        </a>
       </div> 
     </div>
 
