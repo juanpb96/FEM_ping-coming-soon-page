@@ -6308,23 +6308,26 @@ footer .attribution a {
     font-size: 0.875rem;
   }
   main form, main img {
-    max-width: 700px;
+    max-width: 650px;
   }
   main form {
-    max-width: 700px;
     height: 6rem;
     flex-direction: row;
     align-items: flex-start;
   }
+  main form input, main form button {
+    height: 2.8rem;
+    font-size: 0.875rem;
+  }
   main form .form-input {
-    width: 63%;
+    width: 69%;
   }
   main form .form-input p.error {
     text-align: left;
     margin-left: 2rem;
   }
   main form button {
-    width: 35%;
+    width: 28%;
     margin-top: 0;
   }
 
